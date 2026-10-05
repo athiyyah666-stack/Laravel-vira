@@ -1,0 +1,1256 @@
+/* =========================================================
+   DIGICAM - STYLE CSS
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    background: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    width: 100%;
+    height: 68px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    z-index: 100;
+}
+
+.navbar-inner {
+    position: relative;
+    width: 92%;
+    max-width: 1180px;
+    height: 68px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    color: #222;
+    font-size: 19px;
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+.logo svg {
+    width: 19px;
+    height: 19px;
+}
+
+.logo span {
+    color: #f0527e;
+}
+
+
+/* MENU TENGAH */
+
+.menu {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    white-space: nowrap;
+}
+
+.menu a {
+    color: #333;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #f0527e;
+}
+
+
+/* BAGIAN KANAN */
+
+.nav-right {
+    position: absolute;
+
+    right: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+/* KERANJANG */
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #222;
+}
+
+.nav-icon svg {
+    width: 21px;
+    height: 21px;
+}
+
+.nav-icon:hover {
+    color: #f0527e;
+}
+
+
+/* PROFILE */
+
+.nav-profile {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-circle {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    background: #fff0f5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-circle svg {
+    width: 17px;
+    height: 17px;
+    color: #f0527e;
+}
+
+.nav-profile:hover .user-circle {
+    background: #ffe2ec;
+}
+
+
+/* =========================================================
+   HERO / BERANDA
+========================================================= */
+
+.hero {
+    width: 100%;
+    background: #fff5f8;
+    overflow: hidden;
+}
+
+.hero-container {
+    width: 92%;
+    max-width: 1180px;
+    min-height: 470px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* HERO TEXT */
+
+.hero-content {
+    width: 50%;
+    padding: 50px 0;
+}
+
+.welcome {
+    display: inline-block;
+
+    color: #f0527e;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+
+    margin-bottom: 12px;
+}
+
+.hero-content h1 {
+    font-size: 43px;
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+}
+
+.hero-content h1 span {
+    color: #f0527e;
+}
+
+.hero-content p {
+    max-width: 470px;
+
+    color: #777;
+
+    font-size: 13px;
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+/* HERO BUTTON */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 11px 21px;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+.btn-primary {
+    background: #f0527e;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(240, 82, 126, 0.22);
+}
+
+.btn-secondary {
+    border: 1px solid #f0527e;
+    color: #f0527e;
+    background: #fff;
+}
+
+.btn-secondary:hover {
+    background: #fff0f5;
+    transform: translateY(-2px);
+}
+
+
+/* HERO IMAGE */
+
+.hero-image {
+    position: relative;
+
+    width: 50%;
+    min-height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-circle {
+    position: absolute;
+
+    width: 390px;
+    height: 185px;
+
+    background: #ffd8e5;
+
+    border-radius: 50%;
+
+    bottom: 65px;
+
+    z-index: 1;
+}
+
+
+/* FOTO SONY */
+
+.hero-image img {
+    position: relative;
+
+    width: 440px;
+    height: 340px;
+
+    object-fit: contain;
+
+    z-index: 2;
+
+    animation: cameraFloat 3s ease-in-out infinite;
+}
+
+@keyframes cameraFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-9px);
+    }
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.features {
+    width: 92%;
+    max-width: 1180px;
+
+    margin: 35px auto 65px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 18px;
+
+    border: 1px solid #eee;
+    border-radius: 10px;
+
+    background: #fff;
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.feature:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.feature > svg {
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+    color: #f0527e;
+}
+
+.feature b {
+    display: block;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    margin-bottom: 2px;
+}
+
+.feature small {
+    display: block;
+
+    color: #888;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   KAMERA POPULER
+========================================================= */
+
+.popular {
+    width: 92%;
+    max-width: 1180px;
+
+    margin: 0 auto 70px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.section-heading a {
+    color: #f0527e;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.camera-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.camera-card {
+    overflow: hidden;
+
+    background: #fff;
+
+    border: 1px solid #eee;
+    border-radius: 12px;
+
+    padding-bottom: 18px;
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.camera-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.camera-photo {
+    width: 100%;
+    height: 210px;
+
+    background: #fafafa;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.camera-photo img {
+    width: 90%;
+    height: 90%;
+
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+.camera-card:hover .camera-photo img {
+    transform: scale(1.04);
+}
+
+.camera-card h3 {
+    font-size: 13px;
+
+    margin: 14px 15px 5px;
+}
+
+.rating {
+    color: #f0527e;
+
+    font-size: 11px;
+
+    margin: 0 15px 8px;
+
+    letter-spacing: 1px;
+}
+
+.camera-card strong {
+    display: block;
+
+    color: #f0527e;
+
+    font-size: 13px;
+
+    margin: 0 15px;
+}
+
+.camera-card strong small {
+    color: #888;
+
+    font-size: 9px;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   PROMO BANNER
+========================================================= */
+
+.promo-banner {
+    width: 92%;
+    max-width: 1180px;
+
+    margin: 0 auto 70px;
+
+    min-height: 170px;
+
+    padding: 35px 45px;
+
+    border-radius: 15px;
+
+    background: #fff0f5;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.promo-banner h2 {
+    font-size: 25px;
+
+    margin-bottom: 8px;
+}
+
+.promo-banner p {
+    color: #777;
+
+    font-size: 11px;
+
+    max-width: 520px;
+}
+
+.promo-banner a {
+    color: #f0527e;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.gift {
+    font-size: 55px;
+
+    animation: giftFloat 2.5s ease-in-out infinite;
+}
+
+@keyframes giftFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+
+/* =========================================================
+   PAGE CONTAINER
+========================================================= */
+
+.page-container {
+    width: 92%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 50px 0 70px;
+}
+
+.page-title {
+    margin-bottom: 35px;
+}
+
+.page-title h1 {
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+
+.page-title p {
+    color: #888;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   PROMO PAGE
+========================================================= */
+
+.promo-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+.promo-card {
+    min-height: 225px;
+
+    padding: 38px;
+
+    background: #fff0f5;
+
+    border-radius: 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(240, 82, 126, 0.08);
+}
+
+.promo-card span {
+    color: #f0527e;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.promo-card h2 {
+    color: #f0527e;
+
+    font-size: 31px;
+
+    margin: 5px 0 8px;
+}
+
+.promo-card p {
+    color: #888;
+
+    font-size: 11px;
+
+    margin-bottom: 15px;
+}
+
+.promo-card a {
+    color: #f0527e;
+
+    font-size: 10px;
+}
+
+.promo-picture {
+    font-size: 50px;
+
+    animation: promoFloat 3s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    border-top: 1px solid #eee;
+
+    background: #fff;
+}
+
+.footer-container {
+    width: 92%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 45px 0;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr 1fr;
+
+    gap: 35px;
+}
+
+.footer-brand p {
+    color: #888;
+
+    font-size: 10px;
+
+    line-height: 1.7;
+
+    max-width: 280px;
+
+    margin-top: 12px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.footer-column h4 {
+    font-size: 11px;
+
+    margin-bottom: 7px;
+}
+
+.footer-column a,
+.footer-column p {
+    color: #888;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+.footer-column a:hover {
+    color: #f0527e;
+}
+
+.social {
+    display: flex;
+    gap: 8px;
+
+    margin-top: 3px;
+}
+
+.social span {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    background: #fff0f5;
+
+    color: #f0527e;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+}
+
+.copyright {
+    border-top: 1px solid #eee;
+
+    text-align: center;
+
+    padding: 15px;
+
+    color: #aaa;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   ACCOUNT / PROFILE
+========================================================= */
+
+.profile-page {
+    width: 92%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 50px 0 70px;
+}
+
+.profile-card {
+    background: #fff;
+
+    border: 1px solid #eee;
+
+    border-radius: 14px;
+
+    padding: 30px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.profile-avatar {
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    background: #fff0f5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #f0527e;
+}
+
+.profile-avatar svg {
+    width: 28px;
+    height: 28px;
+}
+
+.profile-header h2 {
+    font-size: 18px;
+}
+
+.profile-header p {
+    color: #888;
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   BUTTON / GENERAL
+========================================================= */
+
+button {
+    font-family: inherit;
+}
+
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #f0527e;
+}
+
+
+/* =========================================================
+   RESPONSIVE TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .menu {
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 10px;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .camera-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-image img {
+        width: 350px;
+    }
+
+    .hero-circle {
+        width: 320px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: auto;
+    }
+
+    .navbar-inner {
+        height: auto;
+        min-height: 68px;
+
+        padding: 15px 0;
+
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        position: static;
+
+        order: 3;
+
+        width: 100%;
+
+        transform: none;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+        padding-top: 12px;
+    }
+
+    .nav-right {
+        right: 0;
+    }
+
+    .hero-container {
+        flex-direction: column;
+
+        padding: 40px 0;
+    }
+
+    .hero-content {
+        width: 100%;
+
+        text-align: center;
+
+        padding: 20px 0;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+
+        min-height: 330px;
+    }
+
+    .hero-image img {
+        width: 320px;
+        height: 280px;
+    }
+
+    .hero-circle {
+        width: 300px;
+        height: 140px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .camera-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .promo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .promo-banner {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        padding: 30px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+
+        gap: 10px;
+
+        flex-direction: column;
+    }
+}
+
+
+/* =========================================================
+   TENTANG KAMI
+========================================================= */
+
+.about-page {
+    width: 100%;
+    background: #fff;
+    padding: 70px 0 90px;
+}
+
+.about-container {
+    width: 92%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.about-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 55px;
+}
+
+.about-label {
+    display: inline-block;
+    color: #f0527e;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.about-header h1 {
+    margin: 0 0 15px;
+    font-size: 38px;
+    color: #222;
+}
+
+.about-header p {
+    margin: 0;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.about-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.about-text h2 {
+    font-size: 30px;
+    margin: 0 0 15px;
+    color: #222;
+}
+
+.about-text h2 span {
+    color: #f0527e;
+}
+
+.about-text p {
+    margin: 0;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.about-image {
+    width: 100%;
+    height: 300px;
+    background: #fff5f8;
+    border-radius: 18px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vision-mission {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 70px;
+}
+
+.about-box {
+    padding: 30px;
+    background: #fff5f8;
+    border-radius: 15px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(240, 82, 126, 0.10);
+}
+
+.about-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #f0527e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.about-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.about-box h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: #222;
+}
+
+.about-box p {
+    margin: 0;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.why-section {
+    text-align: center;
+}
+
+.why-section > h2 {
+    margin: 0 0 30px;
+    font-size: 30px;
+    color: #222;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.why-card {
+    padding: 25px 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 14px;
+    text-align: left;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.why-card h3 {
+    margin: 0 0 8px;
+    font-size: 15px;
+    color: #222;
+}
+
+.why-card p {
+    margin: 0;
+    color: #777;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* TENTANG KAMI - MOBILE */
+
+@media (max-width: 768px) {
+
+    .about-page {
+        padding: 45px 0 60px;
+    }
+
+    .about-header h1 {
+        font-size: 30px;
+    }
+
+    .about-intro {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-image {
+        height: 250px;
+    }
+
+    .vision-mission {
+        grid-template-columns: 1fr;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+}
